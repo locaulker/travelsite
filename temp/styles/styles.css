@@ -1,0 +1,15 @@
+body {
+  color: #2f5572;
+  padding: 25px;
+  margin: 10px;
+  -webkit-columns: 300px 2;
+          columns: 300px 2; }
+
+img {
+  position: absolute;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
+
+.box a {
+  display: block;
+  padding: 10px; }

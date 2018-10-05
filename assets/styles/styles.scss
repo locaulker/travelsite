@@ -1,0 +1,21 @@
+$mainBlue: #2f5572;
+
+body {
+  color: $mainBlue;
+
+  padding: 25px;
+  margin: 10px;
+  columns: 300px 2;
+}
+
+img {
+  position: absolute;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.box {
+  a {
+    display: block;
+    padding: 10px;
+  }
+}
