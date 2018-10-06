@@ -3,6 +3,9 @@
     "cc",
     "cssvars",
     "dev",
+    "hexrgba",
+    "lazysizes",
+    "postcss",
     "travelsite"
   ]
 }
