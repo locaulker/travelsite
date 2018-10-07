@@ -2,10 +2,14 @@
 @import "normalize.css";
 
 // Global
-@import "base/global";
 @import "base/variables";
 @import "base/mixins";
-
-// Other
+@import "base/global";
+// Modules
 @import "modules/large-hero";
 @import "modules/btn";
+@import "modules/wrapper";
+@import "modules/page-section";
+@import "modules/headline";
+@import "modules/row";
+@import "modules/generic-content-container";
