@@ -2,8 +2,9 @@
 @import "normalize.css";
 
 // Global
-@import "base/variables";
 @import "base/global";
+@import "base/variables";
+@import "base/mixins";
 
 // Other
 @import "modules/large-hero";
