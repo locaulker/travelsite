@@ -2,6 +2,10 @@
 
   @include clearfix;
 
+  &--t-padding {
+    padding-top: 80px;
+  }
+
   &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
@@ -15,10 +19,19 @@
     }
 
     &--gutters-large > div {
-
       &:not(:last-child) {
         padding-right: 100px;
       }
+    }
+
+    &--gutters-small > div {
+      &:not(:last-child) {
+        padding-right: 45px;
+      }
+    }
+
+    &--gutters-small {
+      margin-right: -45px;
     }
 
     &__b-margin-until-medium {
@@ -46,6 +59,81 @@
 
     &__medium-4--smaller {
       width: 63%;
+    }
+  }
+
+  @include atLarge {
+    &--gutters > div {
+
+      &:not(:last-child) {
+        padding-right: 65px;
+      }
+    }
+
+    &--gutters-large > div {
+      &:not(:last-child) {
+        padding-right: 100px;
+      }
+    }
+
+    &--gutters-small > div {
+      &:not(:last-child) {
+        padding-right: 45px;
+      }
+    }
+
+    &--gutters-small {
+      margin-right: -45px;
+    }
+
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    &__large-6 {
+      float: left;
+      width: 50%;
+    }
+
+    &__large-4 {
+      float: left;
+      width: 33.333333%;
+    }
+
+    &__large-4--larger {
+      width: 37%;
+    }
+  
+    &__large-8 {
+      float: left;
+      width: 66.666667%;
+    }
+
+    &__large-4--smaller {
+      width: 63%;
+    }
+  }
+
+  /* Begin Equal Height Rules */
+  &--equal-height-at-medium {
+    @include atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+
+  &--equal-height-at-large {
+    @include atLarge {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 

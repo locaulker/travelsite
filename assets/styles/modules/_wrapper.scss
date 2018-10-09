@@ -9,6 +9,26 @@
     max-width: 976px;
   }
 
+  &--no-padding-until-medium {
+    padding-left: 0; //18px
+    padding-right: 0; //18px
+
+    @include atMedium {
+      padding-left: 1.125rem; //18px
+      padding-right: 1.125rem; //18px
+    }
+  }
+
+  &--no-padding-until-larg {
+    padding-left: 0; //18px
+    padding-right: 0; //18px
+
+    @include atLarge {
+      padding-left: 1.125rem; //18px
+      padding-right: 1.125rem; //18px
+    }
+  }
+
   .wrapper {
     padding-left: 0;
     padding-right: 0;
