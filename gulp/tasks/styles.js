@@ -5,13 +5,14 @@ var gulp = require ('gulp'),
   nested = require ('postcss-nested'),
   cssvars = require ('postcss-simple-vars'),
   cssImport = require ('postcss-Import'),
-  mixins = require ('postcss-mixins');
+  mixins = require ('postcss-mixins'),
+  hexrgba = require ('postcss-hexrgba');
 
 
 
 gulp.task('styles', function() {
   var processors = [
-    cssImport, mixins, cssvars, nested, autoprefixer
+    cssImport, mixins, cssvars, nested, hexrgba, autoprefixer
   ];
 
   return gulp.src('./assets/styles/styles.scss')
