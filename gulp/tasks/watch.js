@@ -25,4 +25,13 @@ gulp.task('watch', function() {
   watch('./assets/styles/**/*.scss', function() {
     gulp.start('cssInject');
   });
+
+  watch('./assets/scripts/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  });
+
+  gulp.task('scriptsRefresh', ['scripts'], function() {
+    browserSync.reload();
+  });
+
 });
